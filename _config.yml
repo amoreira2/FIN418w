@@ -14,7 +14,7 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Quantitatove Finance with Python"
+title:		           "Fin 418: Quantitatove Finance with Python"
 description:	       "A data-centric course on investments"
 author:              "Alan Moreira"
 
