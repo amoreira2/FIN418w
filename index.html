@@ -2,3 +2,166 @@
 layout: home
 title: Home
 ---
+
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td></tr>
+<tr class="monday">
+<td rowspan="span">
+Week 16
+</td><td>
+0
+</td><td>
+Mon 05/03
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td></tr>
+<tr class="monday">
+<td>
+</td><td>
+0
+</td><td>
+Wed 05/05
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td></tr>
+<tr class="monday">
+<td>
+</td><td>
+0
+</td><td>
+Fri 05/07
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td></tr>
+<tr class="monday">
+<td>
+</td><td>
+0
+</td><td>
+Tue 05/11
+</td><td>
+Final Exam
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+<div>Final (3 PM - 6 PM)</div>
+</td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+</section><!-- /#content -->
+  </div>
+  <footer id="contentinfo" class="body">
+  </footer><!-- /#contentinfo -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+
+    // Announcements
+    var announcementIndex = 0;
+
+    function setAnnouncements(offset) {
+      var newIndex = announcementIndex  + offset;
+      var announcementNumber = $('.announcement').length;
+
+      if (newIndex < 0 || newIndex >= announcementNumber) {
+        return;
+      }
+
+      $('#announcement-' + announcementIndex).hide(0, function() {
+        $('#announcement-' + newIndex).show(0);
+      });
+
+      announcementIndex = newIndex;
+
+      if (announcementIndex >= announcementNumber - 1) {
+        $('#announcement-' + announcementIndex + ' .announcement-btn-older')
+          .addClass('disabled');
+      }
+      if (announcementIndex === 0) {
+        $('#announcement-' + announcementIndex + ' .announcement-btn-newer')
+          .addClass('disabled');
+      }
+    }
+    setAnnouncements(0);
+
+    $('.announcement-btn-newer > a').click(function() {
+      setAnnouncements(-1);
+    });
+    $('.announcement-btn-older > a').click(function() {
+      setAnnouncements(1);
+    });
+  });
+
+</script>
+
+</body>
+</html>
