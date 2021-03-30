@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to Fin 418!"
 author: "Alan Moreira"
 categories: introduction
-tags: [documentation,sample]
+tags: [introduction,sample]
 image: big-data-risk-management-in-financial-markets.jpg
 ---
 
