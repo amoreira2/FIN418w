@@ -18,7 +18,7 @@ menu:
 social:
 - {icon: 'twitter', link: 'https://twitter.com/alan_econ'}
 - {icon: 'envelope', link: 'mailto:l.nguyen.paul@gmail.com'}
-
+- {icon: 'slack', link: 'https://app.slack.com/client/T88MQB864/C01RLK8FKQS'}
 # Customize site text
 pagination:
   next_page: 'Newer'
